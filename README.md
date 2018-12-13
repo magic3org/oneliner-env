@@ -28,7 +28,7 @@ Linux(L),Nginx(N),MariaDB(M),PHP(P)のLEMP環境を作成します。
 PHPはバージョン7.0以上です。
 
 ```
-$ curl https://raw.githubusercontent.com/czbone/oneliner-env/master/script/build_lemp.sh | sh
+$ curl https://raw.githubusercontent.com/magic3org/oneliner-env/master/script/build_lemp.sh | sh
 ```
 
 # 検証環境
