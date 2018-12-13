@@ -30,6 +30,7 @@
     - geerlingguy.mysql
     - role: geerlingguy.firewall
       when: ansible_os_family == 'Debian'
+    - nginx_build
 
   tasks:
     - selinux: state=disabled
