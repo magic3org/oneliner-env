@@ -1,13 +1,13 @@
 #!/bin/bash
 # 
-# Script Name: build_lemp.sh
+# Script Name: build_lemp_magic3.sh
 #
 # Version:      1.0.0
 # Author:       Naoki Hirata
 # Date:         2018-12-13
 # Usage:        build_lemp.sh [-test]
 # Options:      -test      test mode execution with the latest source package
-# Description:  This script builds LEMP(Linux Nginx, MariaDB, Linux) server environment with the one-liner command.
+# Description:  This script builds Magic3 system on LEMP(Linux Nginx, MariaDB, Linux) server environment with the one-liner command.
 # Version History:
 #               1.0.0  (2018-12-13) initial version
 # License:      GPL v3 License
