@@ -1,16 +1,16 @@
 #!/bin/bash
 # 
-# Script Name: build_lemp_magic3.sh
+# Script Name: build_lemp.sh
 #
-# Version:      1.0.0
+# Version:      0.1.0beta
 # Author:       Naoki Hirata
-# Date:         2018-12-13
+# Date:         2019-02-20
 # Usage:        build_lemp.sh [-test]
 # Options:      -test      test mode execution with the latest source package
 # Description:  This script builds Magic3 system on LEMP(Linux Nginx, MariaDB, Linux) server environment with the one-liner command.
 # Version History:
-#               1.0.0  (2018-12-13) initial version
-# License:      GPL v3 License
+#               0.1.0  (2019-02-20) update
+# License:      MIT License
 
 # Define macro parameter
 readonly GITHUB_USER="magic3org"
@@ -65,8 +65,10 @@ echo "# START BUILDING ENVIRONMENT                                           #"
 echo "########################################################################"
 
 # Get test mode
-if [[  "$1" = '-test'  ]]; then
+if [ "$1" == '-test' ]; then
     readonly TEST_MODE="true"
+    
+    echo "################# START TEST MODE #################"
 else
     readonly TEST_MODE="false"
 fi
@@ -75,14 +77,13 @@ declare INSTALL_PACKAGE_CMD=""
 if [ $OS == 'CentOS' ]; then
     INSTALL_PACKAGE_CMD="yum -y install"
 elif [ $OS == 'Ubuntu' ]; then
-    INSTALL_PACKAGE_CMD="apt-get install"
+    INSTALL_PACKAGE_CMD="apt -y install"
 fi
-#$INSTALL_PACKAGE_CMD git
+
 $INSTALL_PACKAGE_CMD ansible
 
 # Download the latest repository archive
 if [ $TEST_MODE == 'true' ]; then
-    echo "################# START TEST MODE #################"
     url="https://github.com/${GITHUB_USER}/${GITHUB_REPO}/archive/master.tar.gz"
     version="new"
 else
@@ -100,6 +101,7 @@ cd ${WORK_DIR}
 savefilelist=`ls -1`
 
 # Download archived repository
+echo "########################################################################"
 echo "Start download GitHub repository ${GITHUB_USER}/${GITHUB_REPO}" 
 curl -s -o ${filepath} -L $url
 
