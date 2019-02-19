@@ -1,16 +1,16 @@
 # 1s‚ÅŠÂ‹«\’z
-ƒT[ƒo‚ÉrootƒƒOƒCƒ“‚µ‚Ps‚ÌƒRƒ}ƒ“ƒh‚ğÀs‚·‚é‚¾‚¯‚ÅMagic3‚Ì“®ìŠÂ‹«\’z‚Å‚«‚éƒXƒNƒŠƒvƒg‚Å‚·B
+ƒT[ƒo‚É`root`ƒƒOƒCƒ“‚µ‚Ps‚ÌƒRƒ}ƒ“ƒh‚ğÀs‚·‚é‚¾‚¯‚ÅMagic3‚Ì“®ìŠÂ‹«\’z‚Å‚«‚éƒXƒNƒŠƒvƒg‚Å‚·B
 Magic3‚ÌƒCƒ“ƒXƒg[ƒ‰‚ª‹N“®‚Å‚«‚é‚Æ‚±‚ë‚Ü‚Å‚ğˆê‹C‚É\’z‚µ‚Ü‚·B
 
 Magic3‰^—p‚É•K—v‚Èƒ\ƒtƒgƒEƒFƒA‚ª‚·‚×‚Ä1‘ä‚ÌƒT[ƒo‚É”[‚Ü‚é‚æ‚¤‚ÉƒpƒbƒP[ƒW‰»‚³‚ê‚Ä‚¢‚Ü‚·B
 ŠÂ‹«\’z‚Í“ï‚µ‚¢A‚½‚¢‚Ö‚ñŠÔ‚ª‚©‚©‚é‚Æ‚¢‚¤–â‘è‚ğ‰ğŒˆ‚µ‚Ü‚·B
 
 ## ‘ÎÛOS
-- CentOS 7
+- CentOS 7, Ubuntu18
 
 ## ƒ‰ƒCƒZƒ“ƒX
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
 # Às“à—e
 ƒ[ƒJƒ‹‚ÉAnsible‚ğƒCƒ“ƒXƒg[ƒ‹‚µAAnsible Galaxy‚ÌPlaybook‚ğŠî–{‚É­‚µƒJƒXƒ^ƒ}ƒCƒY‚µ‚ÄŠÂ‹«\’z‚µ‚Ä‚¢‚Ü‚·B
@@ -20,17 +20,21 @@ Magic3‰^—p‚É•K—v‚Èƒ\ƒtƒgƒEƒFƒA‚ª‚·‚×‚Ä1‘ä‚ÌƒT[ƒo‚É”[‚Ü‚é‚æ‚¤‚ÉƒpƒbƒP[ƒW‰»‚³‚ê‚
 - “ú–{ŒêÅ“K‰»
 
 # g‚¢•û
-V‹K‚ÉOS‚ğƒCƒ“ƒXƒg[ƒ‹‚µ‚½ƒT[ƒo‚Éroot‚ÅƒƒOƒCƒ“‚µA\’z‚µ‚½‚¢ŠÂ‹«‚ÌƒXƒNƒŠƒvƒg‚ğÀs‚µ‚Ü‚·B
+V‹K‚ÉOS‚ğƒCƒ“ƒXƒg[ƒ‹‚µ‚½ƒT[ƒo‚É`root`‚ÅƒƒOƒCƒ“‚µA\’z‚µ‚½‚¢ŠÂ‹«‚ÌƒXƒNƒŠƒvƒg‚ğÀs‚µ‚Ü‚·B
 Š®—¹Œã‚Íˆê’UƒT[ƒo‚ğÄ‹N“®‚µ‚Ä‚­‚¾‚³‚¢B
 
-## LEMPŠÂ‹«\’z
+## WebƒT[ƒo(LEMP)ŠÂ‹«\’z (Š—vŠÔ: –ñ10•ª)
 Linux(L),Nginx(N),MariaDB(M),PHP(P)‚ÌLEMPŠÂ‹«‚ğì¬‚µ‚Ü‚·B
-PHP‚Íƒo[ƒWƒ‡ƒ“7.0ˆÈã‚Å‚·B
+
+### ƒo[ƒWƒ‡ƒ“
+- Nginx 1.14.2
+- PHP 7.3
+- MariaDB 5.5.60(CentOS),MySQL 5.7.24(Ubuntu)
 
 ```
-$ curl https://raw.githubusercontent.com/magic3org/oneliner-env/master/script/build_lemp_magic3.sh | sh
+$ curl https://raw.githubusercontent.com/magic3org/oneliner-env/master/script/build_lemp_magic3.sh | bash
 ```
 
 # ŒŸØŠÂ‹«
-- Vagrant Box ucentos/7v
-- ‚³‚­‚çVPS uCentOS7v
+- Vagrant Box CentOS7ucentos/7v, Ubuntu18uubuntu/bionic64v
+- ‚³‚­‚çVPS uCentOS7v(•W€OS), uUbuntu18.04 amd64v(ƒJƒXƒ^ƒ€OS)
