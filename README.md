@@ -8,10 +8,6 @@ Magic3‰^—p‚É•K—v‚Èƒ\ƒtƒgƒEƒFƒA‚ª‚·‚×‚Ä1‘ä‚ÌƒT[ƒo‚É”[‚Ü‚é‚æ‚¤‚ÉƒpƒbƒP[ƒW‰»‚³‚ê‚
 ## ‘ÎÛOS
 - CentOS 7, Ubuntu18
 
-# ŒŸØŠÂ‹«
-- Vagrant Box CentOS7ucentos/7v, Ubuntu18uubuntu/bionic64v
-- ‚³‚­‚çVPS uCentOS7v(•W€OS), uUbuntu18.04 amd64v(ƒJƒXƒ^ƒ€OS)
-
 ## ƒ‰ƒCƒZƒ“ƒX
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
@@ -51,6 +47,10 @@ http://localhost
 DB‚Ö‚ÌÚ‘±î•ñ‚ª•K—v‚É‚È‚è‚Ü‚·B  
 ƒfƒtƒHƒ‹ƒg‚Åì¬‚³‚ê‚Ä‚¢‚éDB‚Ìî•ñ‚ÍˆÈ‰º‚Ì’Ê‚è‚Å‚·B
 
--DB–¼Ftestdb
--DBƒ†[ƒUFtestuser
--ƒpƒXƒ[ƒhFtest
+- DB–¼Ftestdb
+- DBƒ†[ƒUFtestuser
+- ƒpƒXƒ[ƒhFtest
+
+# ŒŸØŠÂ‹«
+- Vagrant Box CentOS7ucentos/7v, Ubuntu18uubuntu/bionic64v
+- ‚³‚­‚çVPS uCentOS7v(•W€OS), uUbuntu18.04 amd64v(ƒJƒXƒ^ƒ€OS)
