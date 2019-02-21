@@ -33,6 +33,7 @@
     - geerlingguy.mysql
     - role: geerlingguy.firewall
       when: ansible_os_family == 'Debian'
+    - magic3
 
   tasks:
     - selinux: state=disabled
@@ -79,8 +80,8 @@
       when: ansible_os_family == 'Debian'
       
     # add php test scripts in default site
-    - template: src="php_index.j2" dest="/var/www/html/index.php"
-    - template: src="php_index2.j2" dest="/var/www/html/index2.php"
+    #- template: src="php_index.j2" dest="/var/www/html/index.php"
+    #- template: src="php_index2.j2" dest="/var/www/html/index2.php"
 
     # firewall configuration for RedHat
     - firewalld: service=http permanent=true state=enabled
