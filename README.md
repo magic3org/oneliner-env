@@ -8,6 +8,10 @@ Magic3‰^—p‚É•K—v‚Èƒ\ƒtƒgƒEƒFƒA‚ª‚·‚×‚Ä1‘ä‚ÌƒT[ƒo‚É”[‚Ü‚é‚æ‚¤‚ÉƒpƒbƒP[ƒW‰»‚³‚ê‚
 ## ‘ÎÛOS
 - CentOS 7, Ubuntu18
 
+# ŒŸØŠÂ‹«
+- Vagrant Box CentOS7ucentos/7v, Ubuntu18uubuntu/bionic64v
+- ‚³‚­‚çVPS uCentOS7v(•W€OS), uUbuntu18.04 amd64v(ƒJƒXƒ^ƒ€OS)
+
 ## ƒ‰ƒCƒZƒ“ƒX
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
@@ -35,6 +39,18 @@ Linux(L),Nginx(N),MariaDB(M),PHP(P)‚ÌLEMPŠÂ‹«‚ğì¬‚µ‚Ü‚·B
 $ curl https://raw.githubusercontent.com/magic3org/oneliner-env/master/script/build_lemp_magic3.sh | bash
 ```
 
-# ŒŸØŠÂ‹«
-- Vagrant Box CentOS7ucentos/7v, Ubuntu18uubuntu/bionic64v
-- ‚³‚­‚çVPS uCentOS7v(•W€OS), uUbuntu18.04 amd64v(ƒJƒXƒ^ƒ€OS)
+### ŠÂ‹«\’zŒã‚Ìì‹Æ
+ŠÂ‹«\’zŒã‚ÍMagic3‚ÌƒCƒ“ƒXƒg[ƒ‹ì‹Æ‚ªI‚í‚Á‚Ä‚¢‚È‚¢ó‘Ô‚Å‚·B  
+Webƒuƒ‰ƒEƒU‚ÅMagic3‚ÌƒCƒ“ƒXƒg[ƒ‰‚ğÀs‚µƒCƒ“ƒXƒg[ƒ‹‚ğŠ®—¹‚³‚¹‚Ü‚·B
+
+IPƒAƒhƒŒƒX“™‚ÅƒhƒLƒ…ƒƒ“ƒgƒ‹[ƒg‚ÉƒAƒNƒZƒX‚µ‚Ü‚·B
+```
+http://localhost
+```
+
+DB‚Ö‚ÌÚ‘±î•ñ‚ª•K—v‚É‚È‚è‚Ü‚·B  
+ƒfƒtƒHƒ‹ƒg‚Åì¬‚³‚ê‚Ä‚¢‚éDB‚Ìî•ñ‚ÍˆÈ‰º‚Ì’Ê‚è‚Å‚·B
+
+-DB–¼Ftestdb
+-DBƒ†[ƒUFtestuser
+-ƒpƒXƒ[ƒhFtest
