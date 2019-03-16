@@ -36,6 +36,7 @@
     - nginx_build
     - ffmpeg_build
     - magic3
+    - magic3_env
 
   tasks:
     - selinux: state=disabled
