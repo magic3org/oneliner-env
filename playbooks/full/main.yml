@@ -21,7 +21,10 @@
       - name: "testuser"
         password: "test"
         priv: "testdb.*:ALL"
-    
+
+    # nodejs
+    nodejs_version: "10.x"
+
   roles:
     - role: geerlingguy.repo-remi
       when: ansible_os_family == 'RedHat'
@@ -33,10 +36,11 @@
     - geerlingguy.mysql
     - role: geerlingguy.firewall
       when: ansible_os_family == 'Debian'
+    - geerlingguy.nodejs
     - nginx_build
     - ffmpeg_build
     - magic3
-    - magic3_env
+#    - magic3_env
 
   tasks:
     - selinux: state=disabled
