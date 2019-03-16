@@ -10,3 +10,4 @@
 - src: geerlingguy.firewall
   when: ansible_os_family == 'Debian'
 - geerlingguy.nodejs
+- geerlingguy.redis

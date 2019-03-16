@@ -23,7 +23,7 @@
         priv: "testdb.*:ALL"
 
     # nodejs
-    nodejs_version: "10.x"
+    nodejs_version: "11.x"
 
   roles:
     - role: geerlingguy.repo-remi
@@ -37,6 +37,7 @@
     - role: geerlingguy.firewall
       when: ansible_os_family == 'Debian'
     - geerlingguy.nodejs
+    - geerlingguy.redis
     - nginx_build
     - ffmpeg_build
     - magic3
